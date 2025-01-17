@@ -1,7 +1,9 @@
 {
     "name": "Quiz Game",
     "short_name": "Quiz",
-    "start_url": "/",
+    "description": "An interactive quiz game with multiple difficulty levels",
+    "start_url": "./",
+    "scope": "./",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#2a5298",
@@ -10,7 +12,20 @@
         {
             "src": "favicon.ico",
             "sizes": "48x48",
-            "type": "image/x-icon"
+            "type": "image/x-icon",
+            "purpose": "any"
+        }
+    ],
+    "shortcuts": [
+        {
+            "name": "Start Normal Quiz",
+            "url": "/?mode=normal",
+            "description": "Start a normal difficulty quiz"
+        },
+        {
+            "name": "Start Kids Quiz",
+            "url": "/?mode=kids",
+            "description": "Start an easy quiz for kids"
         }
     ]
 }
